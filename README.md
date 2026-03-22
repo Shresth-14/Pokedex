@@ -58,13 +58,14 @@ Data retrieved includes names, IDs, types, base stats, abilities, height, weight
 
 ## Project Structure
 
+```
 pokedex/
 │
-├── index.html           # Main HTML file — structure, styles, and scripts
-├── style.css            # Multiple Files as per need
-├── script.js            # Multiple Files as per need
-├── README.md            # Project documentation (this file)
-
+├── index.html      # Main HTML file — structure, styles, and scripts
+├── style.css       # Styling (can be split into multiple files if needed)
+├── script.js       # JavaScript logic (can be split into multiple files if needed)
+├── README.md       # Project documentation
+```
 ---
 
 ## How to Run
