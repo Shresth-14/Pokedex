@@ -1,0 +1,113 @@
+body {
+  background-color: #ffff;
+  font-family: 'Orbitron', sans-serif; 
+  letter-spacing: 1px;
+  color: white;
+}
+
+.app-header {
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 25px;
+  padding: 10px 10px;
+  border-radius: 14px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+
+.navbar span {
+  position: relative;
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 12px;
+  color: grey;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+
+.navbar span:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+
+.navbar span:active {
+  transform: scale(0.95);
+}
+
+.navbar span.active {
+  background: black;
+  color: white;
+}
+
+
+.navbar span:hover::after {
+  width: 60%;
+}
+
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 12px;
+  color: grey;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.nav-link:active {
+  transform: scale(0.95);
+}
+
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgb(175, 155, 0);
+  cursor: pointer;
+
+  background: center/cover no-repeat url("images/profile.png");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.profile-icon:active {
+  transform: scale(0.95);
+}
