@@ -9,19 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
- <header class="app-header glass">
+
+<header class="app-header glass">
+
   <nav class="navbar">
-    <span> Dashbaord</span>
-    <a class="nav-link" href="./htmlfolders/explore.html">Explore</a>
-    <span>Favourites</span>
-   
+    <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+    <span class="nav-link" onclick="goToExplore()">Explore</span>
+    <span class="nav-link" onclick="goToFavourites()">Favourites</span>
   </nav>
-      <button class="profile-icon" type="button" aria-label="Profile"></button>
+
+  <button class="profile-icon" type="button" aria-label="Profile"></button>
 
 </header>
-  
 
-
+<script src="navigation.js"></script>
 
 </body>
 </html>

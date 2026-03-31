@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../cssfolders/explore.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <header class="app-header glass">
+      <nav class="navbar">
+        <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+        <span class="nav-link" onclick="goToExplore()">Explore</span>
+        <span class="nav-link" onclick="goToFavourites()">Favourites</span>
+      </nav>
+      <button class="profile-icon" type="button" aria-label="Profile" onclick="goToFavourites()"></button>
+    </header>
+    <section class="pokemon-container" id="pokemonContainer"></section>
+
+    <script src="../navigation.js"></script>
+    <script src="../jsfolders/explore.js"></script>
+</body>
+</html>
