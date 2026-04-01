@@ -10,17 +10,38 @@
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <header class="app-header glass">
-      <nav class="navbar">
-        <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
-        <span class="nav-link" onclick="goToExplore()">Explore</span>
-        <span class="nav-link" onclick="goToFavourites()">Favourites</span>
-      </nav>
-      <button class="profile-icon" type="button" aria-label="Profile" onclick="goToFavourites()"></button>
-    </header>
-    <section class="pokemon-container" id="pokemonContainer"></section>
+  <header class="app-header glass">
+    <nav class="navbar">
+      <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+      <span class="nav-link active" onclick="goToExplore()">Explore</span>
+      <span class="nav-link" onclick="goToFavourites()">Favourites</span>
+    </nav>
+  </header>
 
-    <script src="../navigation.js"></script>
-    <script src="../jsfolders/explore.js"></script>
+  <main class="explore-page">
+    <section class="pokedex-hero">
+      <p class="hero-kicker">Pokédex Explorer</p>
+      <h1>Find your next battle partner</h1>
+      <p class="hero-subtitle">Search by name and filter by Pokémon type.</p>
+
+      <section class="explore-controls">
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="Search by name (e.g. pikachu)"
+        />
+
+        <select id="typeSortSelect" class="type-sort-select">
+          <option value="all">Type: All</option>
+        </select>
+      </section>
+    </section>
+
+    <section class="pokemon-container" id="pokemonContainer"></section>
+  </main>
+
+  <script src="../navigation.js"></script>
+  <script src="../jsfolders/explore.js"></script>
 </body>
 </html>

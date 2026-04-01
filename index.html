@@ -8,19 +8,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dashboard-body">
 
 <header class="app-header glass">
 
   <nav class="navbar">
-    <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+    <span class="nav-link active" onclick="goToDashboard()">Dashboard</span>
     <span class="nav-link" onclick="goToExplore()">Explore</span>
     <span class="nav-link" onclick="goToFavourites()">Favourites</span>
   </nav>
 
-  <button class="profile-icon" type="button" aria-label="Profile"></button>
+
 
 </header>
+
+<main class="dashboard-main">
+  <section class="hero-card">
+    <img src="images/pokedex.jpeg" alt="Pokédex" class="pokedex-image" />
+
+    <div class="hero-actions">
+      <button type="button" class="hero-btn primary" onclick="goToExplore()">Explore Pokémon</button>
+      <button type="button" class="hero-btn secondary" onclick="goToFavourites()">Go to Favourites</button>
+    </div>
+  </section>
+</main>
 
 <script src="navigation.js"></script>
 
