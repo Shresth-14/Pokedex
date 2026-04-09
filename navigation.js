@@ -16,8 +16,8 @@ window.goToExplore = function () {
 
 window.goToFavourites = function () {
   if (window.location.pathname.includes("/htmlfolders/")) {
-    window.location.href = "./";
+    window.location.href = "./favourites.html";
     return;
   }
-  window.location.href = "./htmlfolders/";
+  window.location.href = "./htmlfolders/favourites.html";
 };

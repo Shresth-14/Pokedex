@@ -18,30 +18,31 @@
     </nav>
   </header>
 
-  <main class="explore-page">
-    <section class="pokedex-hero">
-      <p class="hero-kicker">Pokédex Explorer</p>
+  <main class="page">
+    <section class="container">
+      <p class="label">Pokédex Explorer</p>
       <h1>Find your next battle partner</h1>
-      <p class="hero-subtitle">Search by name and filter by Pokémon type.</p>
+      <p class="subtitle">Search by name and filter by Pokémon type.</p>
 
-      <section class="explore-controls">
+      <section class="controls">
         <input
           id="searchInput"
-          class="search-input"
+          class="input"
           type="text"
           placeholder="Search by name (e.g. pikachu)"
         />
 
-        <select id="typeSortSelect" class="type-sort-select">
+        <select id="typeSortSelect" class="select">
           <option value="all">Type: All</option>
         </select>
       </section>
     </section>
 
-    <section class="pokemon-container" id="pokemonContainer"></section>
+    <section class="grid" id="pokemonContainer"></section>
   </main>
 
   <script src="../navigation.js"></script>
+  <script src="../jsfolders/favourites-storage.js"></script>
   <script src="../jsfolders/explore.js"></script>
 </body>
 </html>
