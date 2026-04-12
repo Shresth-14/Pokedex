@@ -16,7 +16,7 @@ async function loadPokemon() {
   try {
     container.innerHTML = "<p>Loading Pokémon...</p>";
 
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50");
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1000");
     if (!res.ok) {
       throw new Error("Could not fetch Pokemon list");
     }
