@@ -19,17 +19,24 @@
   </nav>
 </header>
 <main class="dashboard-main">
-  <section class="hero-card">
-    <img src="images/pokedex.jpeg" alt="Pokédex" class="pokedex-image" />
+  <section class="dashboard-card">
+    <p class="dashboard-label">Pokédex Dashboard</p>
+    <h1>Build Your 6-Pokémon Squad</h1>
+    <p class="dashboard-subtitle">Pick your team by adding Pokémon names or ids to each slot.</p>
 
-    <div class="hero-actions">
-      <button type="button" class="hero-btn primary" onclick="goToExplore()">Explore Pokémon</button>
-      <button type="button" class="hero-btn secondary" onclick="goToFavourites()">Go to Favourites</button>
+    <section class="squad-board" aria-label="Pokemon squad builder">
+      <div class="squad-grid" id="squadGrid"></div>
+    </section>
+
+    <div class="dashboard-actions">
+      <button type="button" class="dashboard-btn primary" onclick="goToExplore()">Explore Pokémon</button>
+      <button type="button" class="dashboard-btn secondary" onclick="goToFavourites()">Go to Favourites</button>
     </div>
   </section>
 </main>
 
 <script src="navigation.js"></script>
+<script src="jsfolders/dashboard.js"></script>
 
 </body>
 </html>
