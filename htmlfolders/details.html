@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Details</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cssfolders/explore.css" />
+  <link rel="stylesheet" href="../cssfolders/details.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header glass">
+    <nav class="navbar">
+      <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+      <span class="nav-link" onclick="goToExplore()">Explore</span>
+      <span class="nav-link" onclick="goToFavourites()">Favourites</span>
+    </nav>
+  </header>
+
+  <main class="page details-layout">
+    <button class="back-button" onclick="history.back()">← Back</button>
+    <section id="pokemonDetails" class="panel">
+      <p>Loading Pokémon details...</p>
+    </section>
+  </main>
+
+  <script src="../navigation.js"></script>
+  <script src="../jsfolders/favourites-storage.js"></script>
+  <script src="../jsfolders/details.js"></script>
+</body>
+</html>
