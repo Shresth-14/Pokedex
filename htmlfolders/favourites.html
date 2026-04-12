@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favourites</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../cssfolders/explore.css" />
+  <link rel="stylesheet" href="../cssfolders/favourites.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header glass">
+    <nav class="navbar">
+      <span class="nav-link" onclick="goToDashboard()">Dashboard</span>
+      <span class="nav-link" onclick="goToExplore()">Explore</span>
+      <span class="nav-link active" onclick="goToFavourites()">Favourites</span>
+    </nav>
+  </header>
+
+  <main class="page favourites-page">
+    <section class="container favourites-hero">
+      <p class="label">Your Collection</p>
+      <h1>Favourite Pokémon</h1>
+      <p class="subtitle">Search by name and filter by Pokémon type.</p>
+
+      <section class="controls">
+        <input
+          id="searchInput"
+          class="input"
+          type="text"
+          placeholder="Search favourites (e.g. pikachu)"
+        />
+
+        <select id="typeSortSelect" class="select">
+          <option value="all">Type: All</option>
+        </select>
+      </section>
+    </section>
+
+    <section class="grid" id="favouriteContainer"></section>
+  </main>
+
+  <script src="../navigation.js"></script>
+  <script src="../jsfolders/favourites-storage.js"></script>
+  <script src="../jsfolders/favourites.js"></script>
+</body>
+</html>

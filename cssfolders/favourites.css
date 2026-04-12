@@ -1,0 +1,40 @@
+.favourites-page {
+  margin-top: 20px;
+}
+
+.favourites-hero {
+  margin-bottom: 6px;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 16px;
+  padding: 26px 16px;
+  color: #e2e8f0;
+}
+
+.empty-state h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.empty-btn {
+  margin-top: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  color: #f8fafc;
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
